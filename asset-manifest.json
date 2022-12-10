@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/burger-app/static/css/main.894aeac0.css",
+    "main.js": "/burger-app/static/js/main.ddb63b2f.js",
+    "static/js/787.9241d6c7.chunk.js": "/burger-app/static/js/787.9241d6c7.chunk.js",
+    "index.html": "/burger-app/index.html",
+    "main.894aeac0.css.map": "/burger-app/static/css/main.894aeac0.css.map",
+    "main.ddb63b2f.js.map": "/burger-app/static/js/main.ddb63b2f.js.map",
+    "787.9241d6c7.chunk.js.map": "/burger-app/static/js/787.9241d6c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.894aeac0.css",
+    "static/js/main.ddb63b2f.js"
+  ]
+}
