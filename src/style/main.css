@@ -1,0 +1,298 @@
+*{
+    --font-size-xxl: 32px;
+    --font-size-xl: 20px;
+    --font-size-m: 18px;
+    --font-size-s: 17px;
+    --font-size-xs: 12px;
+
+    --main-color: #FF962E;
+    --text-color: #5C2E00;
+    --section-color: #FDCA7A;
+    --button-minus: #FEB044;
+    --button-plus: #CDD128;
+    --background-color: #FCCEB4;
+    --secpnd-section-color: #FFF9F4;
+}
+
+h1{
+    font-family: "Raleway ExtraBold";
+    font-size: var(--font-size-xxl);
+    color: var(--main-color);
+}
+
+h2{
+    font-family: "Montserrat Bold";
+    font-size: var(--font-size-xl);
+    color: var(--text-color);
+    text-align: center;
+}
+
+h3{
+    font-family: "Montserrat SemiBold";
+    font-size: var(--font-size-xl);
+    color: var(--text-color);
+}
+
+h4{
+    font-family: "Montserrat Medium";
+    font-size: var(--font-size-m);
+}
+
+h5{
+    font-family: "Montserrat Regular";
+    font-size: var(--font-size-xl);
+}
+
+body{
+    background-color: var(--background-color);
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: var(--secpnd-section-color);
+    filter: drop-shadow(0px 4px 4px #C16D3D);
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.menu ul{
+    padding: 0;
+    display: flex;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu .menu__element{
+    font-family: "Montserrat Light";
+    text-decoration: none;
+    font-size: var(--font-size-s);
+    color: #000;
+    margin-right: 23px;
+}
+
+.menu .menu__element:active{
+    color: var(--main-color);
+    text-decoration: var(--main-color);
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.menu .active{
+    color: var(--main-color);
+    text-decoration: var(--main-color);
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.menu .menu__element:hover{
+    font-family: "Montserrat Bold";
+    color: var(--main-color);
+}
+
+.banner-block{
+    padding: 55px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.price-block, .stuffing-block{
+    max-width: 220px;
+    width: 100%;
+    background-color: var(--section-color);
+    border-radius: 20px;
+    padding: 33px 39px 50px 28px;
+    box-shadow: 0 0 30px rgba(102, 52, 3, 0.4);
+}
+
+.price-block h2{
+    margin-bottom: 35px;
+}
+
+.price-block p{
+    gap: 15px;
+    color: var(--text-color);
+    font-family: "Montserrat SemiBold";
+    font-size: var(--font-size-xl);
+}
+
+.price-block p span{
+    font-family: "Montserrat Italic";
+}
+
+.stuffing-block p{
+    font-family: "Montserrat Medium";
+    font-size: var(--font-size-m);
+}
+
+.btn-minus, .btn-plus{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+    font-family: "Montserrat Regular";
+    font-size: var(--font-size-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.stuffing-block__element{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stuffing-block__element img{
+    width: 70px;
+}
+
+.stuffing-block__buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-minus{
+    background-color: var(--button-minus);
+}
+
+.btn-minus:hover{
+    border: 4px solid var(--button-minus);
+    filter: drop-shadow(0px 0px 10px rgba(167, 170, 34, 0.25));
+}
+
+.btn-minus:hover, .btn-plus:hover{
+    background-color: transparent;
+    transform: scale(1.15);
+}
+
+.btn-plus{
+    background-color: var(--button-plus);
+}
+
+.btn-plus:hover{
+    border: 4px solid var(--button-plus);
+    filter: drop-shadow(0px 0px 10px rgba(227, 158, 61, 0.25));
+}
+
+.burger-block{
+    background-color: var(--secpnd-section-color);
+    box-shadow: 0px 0px 30px rgba(102, 52, 3, 0.4);
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 680px;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-block h2 span{
+    font-family: "Montserrat Regular";
+}
+
+.checkout-button{
+    font-family: "Montserrat Medium";
+    font-size: var(--font-size-s);
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 9px 19px 7px 18px;
+    border-radius: 20px;
+    border: none;
+    margin: 14px 0 14px 40px;
+}
+
+.checkout-button:hover{
+    box-shadow: 0 10px 20px rgba(255, 150, 46, 0.25);
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+}
+
+.burger-block p{
+    font-family: "Montserrat Regular";
+    font-size: var(--font-size-xl);
+}
+
+@media (max-width: 1400px){
+    .banner-block{
+        gap: 20px;
+    }
+    .burger-block{
+        max-width: 600px;
+    }
+
+    .price-block, .stuffing-block{
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 1200px){
+    .burger-block{
+        max-width: 500px;
+    }
+}
+
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    src: url('../assets/fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Italic';
+    src: url('../assets/fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
