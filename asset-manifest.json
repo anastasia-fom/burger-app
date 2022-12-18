@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/burger-app/static/css/main.894aeac0.css",
-    "main.js": "/burger-app/static/js/main.ddb63b2f.js",
+    "main.css": "/burger-app/static/css/main.1590fe9e.css",
+    "main.js": "/burger-app/static/js/main.09df3ba3.js",
     "static/js/787.9241d6c7.chunk.js": "/burger-app/static/js/787.9241d6c7.chunk.js",
+    "static/media/Montserrat-Italic.ttf": "/burger-app/static/media/Montserrat-Italic.454a422e403d349e086e.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/burger-app/static/media/Montserrat-SemiBold.bd5d1e7aca79a7c80ac7.ttf",
+    "static/media/Montserrat-Light.ttf": "/burger-app/static/media/Montserrat-Light.8cdad2035c387e6eff62.ttf",
+    "static/media/Montserrat-Medium.ttf": "/burger-app/static/media/Montserrat-Medium.9c6ca07190eff7aba9f8.ttf",
+    "static/media/Montserrat-Bold.ttf": "/burger-app/static/media/Montserrat-Bold.ee7249237426c10c02ba.ttf",
+    "static/media/Montserrat-Regular.ttf": "/burger-app/static/media/Montserrat-Regular.7746c745e79ff3149248.ttf",
+    "static/media/Raleway-ExtraBold.ttf": "/burger-app/static/media/Raleway-ExtraBold.3f51c53a5eab999a27e3.ttf",
+    "static/media/bottom.png": "/burger-app/static/media/bottom.ccab66e1e183c34fe6cf.png",
+    "static/media/logo.svg": "/burger-app/static/media/logo.ab5d32610b3866edf35b304c22658026.svg",
+    "static/media/top.png": "/burger-app/static/media/top.9fd34e752671d02ac02c.png",
     "index.html": "/burger-app/index.html",
-    "main.894aeac0.css.map": "/burger-app/static/css/main.894aeac0.css.map",
-    "main.ddb63b2f.js.map": "/burger-app/static/js/main.ddb63b2f.js.map",
+    "main.1590fe9e.css.map": "/burger-app/static/css/main.1590fe9e.css.map",
+    "main.09df3ba3.js.map": "/burger-app/static/js/main.09df3ba3.js.map",
     "787.9241d6c7.chunk.js.map": "/burger-app/static/js/787.9241d6c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.894aeac0.css",
-    "static/js/main.ddb63b2f.js"
+    "static/css/main.1590fe9e.css",
+    "static/js/main.09df3ba3.js"
   ]
 }
