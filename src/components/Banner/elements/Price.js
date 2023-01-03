@@ -1,7 +1,7 @@
 import Ingredient from "./Ingredient";
 
 const Price = (props) => {
-    const ingredients = props.ingredients;
+    const data = props.dataIngredient;
 
     return (
         <div className="price-block">
@@ -9,8 +9,11 @@ const Price = (props) => {
 
             <div className="price-block__elements">
                 {
-                ingredients.map((item, index) => (
-                    <Ingredient name={item.name} price={item.price} key={index}/>
+                data.map((item, index) => (
+                    <Ingredient
+                        name={item.name}
+                        price={item.price}
+                        key={index}/>
                     )
                 )
                 }
