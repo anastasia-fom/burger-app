@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/burger-app/static/css/main.88327b63.css",
-    "main.js": "/burger-app/static/js/main.783258e1.js",
+    "main.css": "/burger-app/static/css/main.f9967097.css",
+    "main.js": "/burger-app/static/js/main.34d3584d.js",
     "static/js/787.9241d6c7.chunk.js": "/burger-app/static/js/787.9241d6c7.chunk.js",
     "static/media/Montserrat-Italic.ttf": "/burger-app/static/media/Montserrat-Italic.454a422e403d349e086e.ttf",
     "static/media/Montserrat-SemiBold.ttf": "/burger-app/static/media/Montserrat-SemiBold.bd5d1e7aca79a7c80ac7.ttf",
@@ -18,14 +18,14 @@
     "static/media/top.png": "/burger-app/static/media/top.fbe6489552683e1e44fe.png",
     "static/media/pickle.png": "/burger-app/static/media/pickle.65da27c2d051dcb7cb17.png",
     "static/media/cheese.png": "/burger-app/static/media/cheese.43bc6f60f40ce046bf72.png",
-    "static/media/logo.svg": "/burger-app/static/media/logo.ab5d32610b3866edf35b304c22658026.svg",
+    "static/media/logo.svg": "/burger-app/static/media/logo.6fcc91753a1f0ed66c5d938555983196.svg",
     "index.html": "/burger-app/index.html",
-    "main.88327b63.css.map": "/burger-app/static/css/main.88327b63.css.map",
-    "main.783258e1.js.map": "/burger-app/static/js/main.783258e1.js.map",
+    "main.f9967097.css.map": "/burger-app/static/css/main.f9967097.css.map",
+    "main.34d3584d.js.map": "/burger-app/static/js/main.34d3584d.js.map",
     "787.9241d6c7.chunk.js.map": "/burger-app/static/js/787.9241d6c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88327b63.css",
-    "static/js/main.783258e1.js"
+    "static/css/main.f9967097.css",
+    "static/js/main.34d3584d.js"
   ]
 }
