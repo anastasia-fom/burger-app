@@ -7,7 +7,10 @@ const Control = (props) => {
                 <p>{quantitie}</p>
                 <button className="btn-plus" data-action="increment" data-ingredient={name}>+</button>
             </div>
-            <img src={require(`./../../../assets/img/${name}.png`)} alt={`${name}`} />
+            <img
+                src={require(`./../../../assets/img/${name}.png`)}
+                alt={`${name}`}
+            />
         </div>
     );
 }

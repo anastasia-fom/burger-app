@@ -1,23 +1,31 @@
 import Ingredient from "./Ingredient";
+import Loader from "./Loader";
 
 const Price = (props) => {
-    const data = props.dataIngredient;
+    const {dataIngredient, loading} = props;
 
     return (
         <div className="price-block">
-            <h2>Our prices</h2>
+            {loading ? (
+                <Loader />
+                ) : (
+                    <div>
+                        <h2>Our prices</h2>
 
-            <div className="price-block__elements">
-                {
-                data.map((item, index) => (
-                    <Ingredient
-                        name={item.name}
-                        price={item.price}
-                        key={index}/>
-                    )
-                )
-                }
-            </div>
+                        <div className="price-block__elements">
+                            {
+                                dataIngredient.map((item, index) => (
+                                        <Ingredient
+                                            name={item.name}
+                                            price={item.price}
+                                            key={index}
+                                        />
+                                    )
+                                )
+                            }
+                        </div>
+                    </div>
+            )}
         </div>
     )
 }

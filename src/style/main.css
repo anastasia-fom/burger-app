@@ -14,6 +14,13 @@
     --secpnd-section-color: #FFF9F4;
 }
 
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 h1{
     font-family: "Raleway ExtraBold";
     font-size: var(--font-size-xxl);
@@ -246,7 +253,9 @@ header{
     margin-top: 90px;
 }
 
-.checkout-button{
+.checkout-button, .clear-button{
+    display: flex;
+    margin: auto;
     font-family: "Montserrat Medium";
     font-size: var(--font-size-s);
     background-color: var(--main-color);
@@ -254,10 +263,10 @@ header{
     padding: 9px 19px 7px 18px;
     border-radius: 20px;
     border: 2px solid transparent;
-    margin: 14px 0 14px 40px;
+
 }
 
-.checkout-button:hover{
+.checkout-button:hover, .clear-button:hover{
     box-shadow: 0 10px 20px rgba(255, 150, 46, 0.25);
     cursor: pointer;
     background-color: transparent;
