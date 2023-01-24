@@ -119,7 +119,6 @@ class App extends React.Component{
                             loading = {loading}
                     />
                 </main>
-
             </>
         );
     }

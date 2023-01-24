@@ -1,9 +1,25 @@
 import top from "./../../../assets/img/top.png"
 import bottom from "./../../../assets/img/bottom.png"
 import Loader from "./Loader";
+import {useState} from "react";
+import Modal from "../../Modal/Modal";
 
-const Burger = (props) => {
-    const {price, order, loading} = props;
+const Burger = ({
+   price,
+   order,
+   loading,
+   quantities,
+   clearBurger
+}) => {
+
+    const [modal, setModal] = useState(false);
+
+    const notActiveCheckout = () => {
+        setModal(false);
+    };
+    const activeCheckout = async () => {
+        setModal(true);
+    };
 
     return(
         <div className="burger-block">
@@ -11,9 +27,20 @@ const Burger = (props) => {
             <Loader />
         ) : (
             <div>
+                {modal && (
+                <Modal
+                    modalActive={modal}
+                    orderSummary={order}
+                    orderPrice={price}
+                    open={modal}
+                    close={notActiveCheckout}
+                    quantities={quantities}
+                    clearBurger = {clearBurger}
+                />
+                )}
                 <div>
                     <h2>Burger price: <span> {price} </span> $</h2>
-                    <button className="checkout-button">Checkout</button>
+                    <button className="checkout-button" onClick={+price > 1 ? activeCheckout : undefined}>Checkout</button>
                 </div>
                 <div className={"burger-block__burger"}>
                 <img src={top} alt="Top" className="bun-top"/>

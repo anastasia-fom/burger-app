@@ -1,10 +1,22 @@
+import {NavLink} from "react-router-dom";
 function Menu() {
+    const menuItems = ['Home', 'Orders', 'Contacts', 'FAQ'];
+
     return(
         <nav className="menu">
             <ul>
-                <li><a href="#" className="menu__element active">Home</a></li>
-                <li><a href="#" className="menu__element">Orders</a></li>
-                <li><a href="#" className="menu__element">FAQ</a></li>
+                {menuItems.map((item, index) => {
+                    return (
+                        <li key={item+index}>
+                            <NavLink
+                                to={"/"+item.toLowerCase()}
+                               className={({ isActive }) => (isActive ? "active menu__element" : "menu__element")}>
+                                {item}
+                            </NavLink>
+                        </li>
+                    )
+                })
+                }
             </ul>
         </nav>
     );

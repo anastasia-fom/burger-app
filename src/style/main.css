@@ -11,7 +11,7 @@
     --button-minus: #FEB044;
     --button-plus: #CDD128;
     --background-color: #FCCEB4;
-    --secpnd-section-color: #FFF9F4;
+    --second-section-color: #FFF9F4;
 }
 
 .loader{
@@ -61,7 +61,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
-    background-color: var(--secpnd-section-color);
+    background-color: var(--second-section-color);
     filter: drop-shadow(0px 4px 4px #C16D3D);
 }
 
@@ -199,7 +199,7 @@ header{
 }
 
 .burger-block{
-    background-color: var(--secpnd-section-color);
+    background-color: var(--second-section-color);
     box-shadow: 0px 0px 30px rgba(102, 52, 3, 0.4);
     border-radius: 30px;
     padding: 20px;
@@ -253,7 +253,10 @@ header{
     margin-top: 90px;
 }
 
-.checkout-button, .clear-button{
+.checkout-button,
+.clear-button,
+.submit-button,
+.cancel-button{
     display: flex;
     margin: auto;
     font-family: "Montserrat Medium";
@@ -263,10 +266,12 @@ header{
     padding: 9px 19px 7px 18px;
     border-radius: 20px;
     border: 2px solid transparent;
-
 }
 
-.checkout-button:hover, .clear-button:hover{
+.checkout-button:hover,
+.clear-button:hover,
+.submit-button:hover,
+.cancel-button:hover{
     box-shadow: 0 10px 20px rgba(255, 150, 46, 0.25);
     cursor: pointer;
     background-color: transparent;
@@ -276,6 +281,223 @@ header{
 .burger-block p{
     font-family: "Montserrat Regular";
     font-size: var(--font-size-xl);
+}
+
+.modal__wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.modal{
+    position: relative;
+    background-color: var(--section-color);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 7;
+    width: 500px;
+    box-shadow: 0 10px 15px rgba(0,0,0, 0.4);
+}
+
+.modal .close-button{
+    width: 70px;
+    font-family: "Montserrat Medium";
+    font-size: var(--font-size-xs);
+    background-color: #C2270A;
+    color: var(--second-section-color);
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.modal .close-button:hover{
+    cursor: pointer;
+    background-color: #9C1F08;
+}
+
+.block__close-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal input{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: transparent;
+    margin-bottom: 10px;
+}
+
+.modal input::placeholder{
+    font-size: var(--font-size-s);
+    padding-left: 10px;
+}
+
+.modal__total-price{
+    text-align: left;
+}
+
+.modal ul{
+    padding: 0;
+}
+
+.modal ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal ul li p{
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.modal ul li img{
+    width: 50px;
+}
+
+.modal__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.delivery {
+    padding: 30px 100px;
+}
+
+.delivery h2 {
+    text-align: left;
+}
+
+.delivery li {
+    list-style-type: none;
+}
+
+.delivery li {
+    border-bottom: 1px solid var(--second-section-color) ;
+}
+
+.delivery li {
+    background-color: var(--second-section-color);
+    padding: 5px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(102, 52, 3, 0.4);
+    margin-top: 20px;
+}
+
+.delivery ul p {
+    font-size: var(--font-size-s);
+    color: var(--text-color);
+    font-family: "Montserrat Bold";
+}
+
+.orders-block {
+    padding: 30px 100px;
+}
+
+.orders-item__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orders-item__details {
+    display: flex;
+    gap: 50px;
+}
+
+.orders-item__details-contacts,
+.orders-item__details-order {
+    width: calc(100%/3);
+}
+
+.orders-item__details-order div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.orders-item {
+    background-color: var(--section-color);
+    border-radius: 20px;
+    padding: 20px 50px;
+    margin-top: 20px;
+    box-shadow: 0 0 30px rgba(102, 52, 3, 0.4);
+}
+
+.orders-item__header-price {
+    font-family: "Montserrat Bold";
+    color: var(--text-color);
+    font-size: var(--font-size-m);
+    background-color: var(--background-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.orders-item__header-name {
+    font-size: var(--font-size-xl);
+    font-family: "Montserrat Bold";
+    color: var(--text-color);
+}
+
+.contacts {
+    padding: 50px 100px;
+}
+
+.contacts__content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contacts__contacts span,
+.contacts__address span {
+    font-family: "Montserrat Bold";
+}
+
+.contacts__contacts,
+.contacts__address,
+.contacts__links {
+    width: calc(100%/3);
+    background-color: var(--second-section-color);
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: var(--font-size-m);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(102, 52, 3, 0.4);
+}
+
+.contacts__links img {
+   width: 40px;
+}
+
+.contacts__links-items {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
 }
 
 @media (max-width: 1400px){
